@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Javascript test</title>
+	
+ <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+	
+	<h1> Javascript Testing </h1>
+	<h3> Problem 1<h3>
+		<p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.</p>
+
+	<p>
+	<script>
+	
+	var solution = function(input) {
+		var sum = 0;
+
+		for (var i = 1; i < input; i++) {
+			if (i % 3 === 0 || i % 5 === 0) {
+				sum += i;
+			}
+
+
+		}
+		
+		return sum;
+	} 
+	
+
+	var input = 1000;
+
+	var answer = solution(input);
+
+	document.write("Answer is: " + answer);
+
+	</script>
+</p>
+
+	
+</div>
+</body>
+</html>
